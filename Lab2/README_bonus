@@ -1,0 +1,39 @@
+AND
+rd = rs & rt
+Test file: and.x
+
+OR
+rd = rs | rt
+Test file: or.x
+
+XOR
+rd = !(rs & rt) & (rs | rt)
+Test file: xor.x
+
+NOR
+rd = !(rs | rt)
+Test file: nor.x
+
+MULT
+hi,lo = rs * rt
+Test file: mult.x
+
+DIV
+lo = rs / rt, hi = rs % rt
+Test file: div.x
+
+ANDI
+rd = rs & immediate
+Test file: andi.x
+
+XORI
+rd = !(rs & immediate) & (rs | immediate)
+Test file: xori.x
+
+MTHI
+hi = rs
+Test file: mthi.x
+
+MTLO
+lo = rs
+Test file: mtlo.x
